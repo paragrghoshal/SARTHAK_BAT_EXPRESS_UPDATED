@@ -1,7 +1,9 @@
 const db = require("mongoose");
-//const dotenv = require('dotenv');
-//dotenv.config();
-const url = process.env.URL;
+const dotenv = require('dotenv');
+dotenv.config();
+//const url = process.env.URL;
+const port = process.env.PORT || 3000;
+const url = process.env.DB_CONNECTION_STRING
 
 const Schema = new db.Schema({
   Url: String,
