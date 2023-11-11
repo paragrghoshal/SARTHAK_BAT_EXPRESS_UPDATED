@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, './public')));
 
 const port = process.env.PORT || 3000;
-// const DB = process.env.DB_CONNECTION_STRING.replace('<USERNAME>', process.env.DB_USER).replace('<PASSWORD>', process.env.DB_PASSWORD);
 
 app.listen(port, () => {
     console.log("server is running")

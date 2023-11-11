@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob, Arts and Technology</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/bootstrap-icons-1.10.5 - Copy/font/bootstrap-icons.css">
+    <link rel="icon" type="image/icon" href="/image/logo.png">
+</head>
+<body>
+    <div id="maining">
+    <header>
+        <img height="50px" width="50px" src="/image/logo.png" style="border-radius: 50%;">
+        <h1>B.A.T Project</h1>
+    </header>
+    <p></p>
+    <div style="display: flex;">
+        <fieldset style="float: left;   overflow: auto;
+        word-wrap: break-word;  text-align: center;">
+            <article class="fore-text">
+                This is main part of the innovation project for the B.A.T group of Center Grove Middle School North, one of the contenders of the 2023 First Lego Robotics League.
+                This websites sole purpose is to demonstrate how we help to spread knowledge or/and tutorials using the World Wide Web.
+                <span style="color: red !important;">THIS WEBSITE IS STILL IN BETA VERSION</span>, this is just to represent a solution to our problem.<br>
+                <br>
+                <a href="https://www.firstinspires.org/robotics/fll"><img src="/image/FLRL.png" height="50px" width="50px" style="border: 3px gray solid; border-radius: 50%;"/></a>
+            </article>
+        </fieldset>
+    </div>    
+    <p>
+    <div id="seach" style="display: flexbox;">
+        <input type="search" id="sb" placeholder="Search for a Video Here" onclick="ShowPanel();" onblur="HidePanel()" > 
+        <button type="button" id="br" style="display: none;" class="s" onclick="Bob()">
+            <main>
+                <main style="display: flex;">
+                    <img height="50px" width="50px" src="/image/Bob.jpg" style="border-radius: 50%;">
+                    <h4 style="text-align: left; padding-left: 20px;">Bob Ross</h4>
+                </main>
+                <h6><%= nameuno %></h6>
+            </main>
+        </button>
+        <div class="s" id="p" style="display: none;"></div>
+        <button type="button" id="ap" style="display: none; padding-right: 27px;" class="s" onclick="Alp()">
+        <main>
+            <main style="display: flex;">
+                <img height="50px" width="50px" src="/image/alp.png" style="border-radius: 50%;">
+                <h4 style="text-align: left; padding-left: 20px;">Alpay Efe</h4>
+            </main>
+            <h6><%= namedos %></h6>
+        </main>
+        </button>
+    </div>
+    </p>
+        <div id="changecolor" style="float: left; clear: both;">
+            <button id="dnn" onclick="ChangeColor()" style="display: flex;">
+                <i class="bi bi-cloud-sun-fill" id="sun" style="color: white;"></i>
+                <i class="bi bi-moon-stars" id="moon" style="color: white;"></i>
+                <br>
+                <span id="text-content">Light</span>
+              </button>              
+        </div>
+    </div>
+    <p></p>
+    <div id="vids">
+        <button type="button" class="btns" onclick="Pizza()"><img src="/image/pizza.png" width="250px" height="150px" style="border: 3px solid gray;"></img><br>How to Draw a Pizza!</button>
+        <button type="button" class="btns" onclick="Coloring()"><img src="/image/color.png" width="250px" height="150px" style="border: 3px solid gray;"></img><br>Coloring...</button>
+        <button type="button" class="btns" onclick="Shape()"><img src="/image/shape.png" width="250px" height="150px" style="border: 3px solid gray;"></img><br>Taking the Frst Step!</button>
+    </div>
+    <div id="parent">
+            <iframe src="" style="border: black solid 3px; border-radius: 50px; width: 1200px; height: 500px; background-color: black;" id="scr"allowfullscreen></iframe>   
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/main.js"></script>
+</body>
+</html>

@@ -5,10 +5,7 @@ body{
     background-color: rgb(20, 20, 20);
 }
 
-#head{
-    text-align: center;
-    font-size: xx-large;
-}
+
 
 #seach{
     width: 175px;
@@ -77,8 +74,8 @@ body{
     margin-left: 10px;
     border: 3px solid gray;
     border-radius: 10px;
-    height: 200px;
-    width: 400px;
+    height: 80px;
+    width: 180px;
     background-color: #252525;
     transition: 0.5s;
     color: gray;
@@ -103,3 +100,67 @@ body{
     align-items: center; /* Center vertically */
     height: 100vh;
  }
+ .fore-text{
+    font-style: normal;
+    font-family: sans-serif;
+    line-height: 150%;
+ }
+ .body-main-header{
+    text-align: center;
+ }
+
+ .body-main-header h1{
+    font-size: 18;
+ }
+ .header-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+ }
+ .created-by{
+    font-size: 8;
+    font-family: sans-serif;
+ }
+ em{
+    color: brown;
+ }
+ .display-video-img{
+    list-style-type:circle;
+    text-align: center;
+ }
+ .video-player{
+
+ }
+.light-class{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.search-item{
+    position: absolute;
+    top: 270px;
+    right: 40px;
+}
+
+.img-btn{
+    width: 150px;
+    height: 70px;
+}
+
+.ul-class{
+    line-height: 100px;
+    list-style: none;
+}
+.li-class{
+    display: inline-block;
+
+}
+.flex-parent-iml{
+
+}
+.real-link{
+    position: absolute;
+    top: 90px;
+    right: 70px;
+}
