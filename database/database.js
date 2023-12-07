@@ -24,8 +24,8 @@ async function getAndSendVidofBob(x, y) {
       Name: "Bob Ross - Island in the Wilderness (Season 29 Episode 1)",
       Search: x
     })
-      .select('-_id')
-      .select('-Search')
+      .select('_id')
+      .select('Search')
       .select(y);
 
     db.connection.close();
@@ -51,8 +51,8 @@ async function getAndSendVidofAlp(x, y) {
       Name: "How I learned to paint ANYTHING!",
       Search: x
     })
-      .select('-_id')
-      .select('-Search')
+      .select('_id')
+      .select('Search')
       .select(y);
       
 
