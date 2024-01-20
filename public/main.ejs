@@ -30,15 +30,22 @@
     </header>
 
     <article>
-        <fieldset class="fore-text">
-                This is main part of the innovation project for the <strong>B.A.T group of Center Grove Middle School North</strong> , one of the contenders of the 2023 First Lego Robotics League.
-                This websites sole purpose is to demonstrate how we help to spread knowledge or/and tutorials using the World Wide Web.
-                <em>THIS WEBSITE IS STILL IN BETA VERSION</em>, this is just to represent a solution to our problem.
-                <br>
+        <fieldset class="fore-text" id="fore-text">
+            <h3>What is this Website?</h3>
+            &nbsp;
+            This is the main part of the innovation project for the <strong>B.A.T group of Center Grove Middle School North</strong>, one of the contenders in the 2023 First Lego Robotics League.
+            &nbsp;
+            <h3>Why does this Website exist?</h3>
+            &nbsp;
+            The sole purpose of this website is to demonstrate how we help spread knowledge and tutorials using the World Wide Web.
+            &nbsp;
+            <p></p>
+            <em>THIS WEBSITE IS IN ITS PRE-ALPHA VERSION</em>, so there will still be stuff yet to be added.
+            <br>            
         </fieldset>
         <div class="real-link">
             <a href="https://www.firstinspires.org/robotics/fll">
-                <img src="/image/FLRL.png" height="50px" width="50px" style="border: 3px gray solid; border-radius: 50%;"/>
+                <img src="/image/FLRL.png" height="50px" width="50px" style="border: 3px gray solid; border-radius: 50%;" id="real-img"/>
             </a>
         </div>
     </article>       
@@ -51,7 +58,7 @@
                     <img height="50px" width="50px" src="/image/Bob.jpg" style="border-radius: 50%;">
                     <h4 style="text-align: left; padding-left: 20px;">Bob Ross</h4>
                 </main>
-                <!-- <h6><%= nameuno %></h6> -->
+                <h6><%= nameuno %></h6>
             </main>
         </button>
         <div class="s" id="p" style="display: none;"></div>
@@ -61,8 +68,28 @@
                 <img height="50px" width="50px" src="/image/alp.png" style="border-radius: 50%;">
                 <h4 style="text-align: left; padding-left: 20px;">Alpay Efe</h4>
             </main>
-            <!-- <h6><%= namedos %></h6> -->
+            <h6><%= namedos %></h6>
         </main>
+        </button>
+        <div class="s" id="p" style="display: none;"></div>
+        <button type="button" id="bat1" style="display: none; padding-right: 27px;" class="s" onclick='Bat("palm")'>
+            <main>
+                <main style="display: flex;">
+                    <img height="50px" width="50px" src="/image/bat.jpg" style="border-radius: 50%;">
+                    <h4 style="text-align: left; padding-left: 20px;">Bob Art Tutorials</h4>
+                </main>
+                <h6><%= nametres %></h6>
+            </main>
+        </button>
+        <div class="s" id="p" style="display: none;"></div>
+        <button type="button" id="bat2" style="display: none; padding-right: 27px;" class="s" onclick='Bat("three")'>
+            <main>
+                <main style="display: flex;">
+                    <img height="50px" width="50px" src="/image/bat.jpg" style="border-radius: 50%;">
+                    <h4 style="text-align: left; padding-left: 20px;">Bob Art Tutorials</h4>
+                </main>
+                <h6><%= namecuatro %></h6>
+            </main>
         </button>
     </div>
     </p>
@@ -90,11 +117,14 @@
             </ul>
         </div>
         <div id="parent" class="video-player">
-                <iframe src="" style="border: black solid 3px; border-radius: 50px; width: 1200px; height: 500px; background-color: black;" id="scr"allowfullscreen></iframe>   
+                <iframe src="" style="border: black solid 3px; border-radius: 50px; width: 1200px; height: 500px; background-color: black;" id="scr" allowfullscreen></iframe>   
         </div>
     </div>    
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+        integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+        crossorigin="anonymous"></script>
     <script src="/src/main.js"></script>
 </body>
 </html>

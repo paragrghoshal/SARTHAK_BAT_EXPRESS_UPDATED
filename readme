@@ -1,3 +1,0 @@
-DB_USERNAME=sarthak_ghoshal
-URL = mongodb+srv://Sarthak_Ghoshal:1029384756@vids.5iskzbc.mongodb.net/Videos
-// const DB = process.env.DB_CONNECTION_STRING.replace('<USERNAME>', process.env.DB_USER).replace('<PASSWORD>', process.env.DB_PASSWORD);

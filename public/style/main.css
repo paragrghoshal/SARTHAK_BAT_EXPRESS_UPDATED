@@ -3,14 +3,16 @@ html { font-family: monospace; overflow-x: hidden;}
 body{
     color: white;
     background-color: rgb(20, 20, 20);
+    background-image: url("/image/bg.png"), url("/image/bg2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
 
 #seach{
     width: 175px;
     margin: 0 auto;
     padding-right: 60px;
+    margin-top: 160px;
 }
 
 .s{
@@ -29,13 +31,31 @@ body{
     width: 176px;
 }
 
-.s:not(#ap){
+#bat2{
+    border-bottom: white solid 0.5px;
+    border-top: white solid 0.5px;
+    border-left: none;
+    border-right: none;
+    width: 176px !important;
+}
+
+#bat1{
     border-bottom: white solid 0.5px;
     border-top: none;
     border-left: none;
     border-right: none;
     width: 176px !important;
 }
+
+.s:not(#ap){
+    border-bottom: white solid 0.5px;
+    border-top: white solid 0.5px;
+    border-left: none;
+    border-right: none;
+    width: 176px !important;
+}
+
+
 
 #p{ border: none !important; }
 
@@ -128,9 +148,7 @@ body{
     list-style-type:circle;
     text-align: center;
  }
- .video-player{
 
- }
 .light-class{
     position: absolute;
     top: 40px;
@@ -148,6 +166,10 @@ body{
     height: 70px;
 }
 
+.fore-text{
+    border-radius: 10px;
+}
+
 .ul-class{
     line-height: 100px;
     list-style: none;
@@ -156,11 +178,72 @@ body{
     display: inline-block;
 
 }
-.flex-parent-iml{
 
-}
 .real-link{
     position: absolute;
     top: 90px;
     right: 70px;
+}
+
+/*
+    this is for non-computer devices responsivness
+*/
+
+@media (max-width: 600px) {
+    .display-video-img{
+        left: 0px;
+        margin-right: 1000px;
+    }
+    #seach{
+        margin-right: 0px;
+        margin-top: 285px;
+    }
+    #sb{
+        margin-left: 52px;
+    }
+    .header-img{
+        margin-right: 100px;
+    }
+    .real-link{
+        margin-right: 160px;
+    }
+    #real-img{
+        top: -30px;
+        position: absolute;
+    }
+    .light-class{
+        margin-top: 30px !important;
+    }
+    .s{
+        margin-left: 52px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .display-video-img{
+        left: 0px;
+        margin-right: 1000px;
+    }
+    #seach{
+        margin-right: 50px;
+        margin-top: 180px;
+    }
+    #sb{
+        margin-left: 52px;
+    }
+    #br{
+        border-top-left-radius: 10px;
+    }
+    #bat2{
+        border-bottom-left-radius: 10px;
+    }
+} 
+
+@media (max-width:1024px) and (min-width:769px){
+    .display-video-img{
+        margin-right: 128px;
+    }
+    #seach{
+        margin-top: 160px;
+    }
 }
